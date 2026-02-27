@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Mans datorikas portfolio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+        <style>
+           
+            body{background-color: #fff4ff}
+            .centered {
+                text-align:center;
+            }
+            img{              
+                
+  display: block;
+
+            }
+            .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+            .fa-anchor,.fa-coffee {font-size:200px}
+            ul {
+    text-align: center;
+    list-style-position: inside;
+}
+        </style>
+        
+    </head>
+    <body>
+        <!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-#fff4ff" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#otrais" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ergonomiska darba vieta</a>
+    <a href="#bildes" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bildes</a>
+
+  </div>
+    <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ergonomiska darba vieta</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
+  </div></div>
+    <!-- Header -->
+<header class="w3-container w3-#fff4ff w3-center" style="padding:128px 16px">
+</header>
+</div>
+<h1 class='centered'><font size="20"><b>Datorikas portfolio</b> </font></h1>
+        <p class='centered'><font size="5"> Datorikas stundās apgūtās tēmas: </font></p>
+        <span style="padding-right: 30px"> 
+</span>
+        <ul class="centered"><font size="4">
+            <li> Datorgrafika </li>
+            <li>Vektorgrafika</li>
+            <li>3D objekta modelēšana, printēšana</li>
+            <li>GIF veidošana</li>
+            <li>Video montēšana</li>
+            <li>Word</li>
+            <li>Excel</li>
+            <li>html(šobrīd)</li>
+        </ul>
+ 
+    <p2 class='centered'><font size="5">    <span style="padding-right: 50px">  Pāris bildes par darīto: </font></p2>
+    <span style="padding-right: 50px"> </span>
+    <div class="w3-#fff4ff" id="bildes">     
+    <img src="images/banner.jpg" style='width: 400px; height: 300px;'>
+         <img src="images/logovaris.svg" style='width: 400px; height: 300px;'>
+    </div>
+      <script>
+
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>    
+    </body>
+</html>
