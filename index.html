@@ -10,7 +10,17 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
         <style>
-           
+       .column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}    
             body{background-color: #fff4ff}
             .centered {
                 text-align:center;
@@ -25,7 +35,9 @@ Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this
             ul {
     text-align: center;
     list-style-position: inside;
-}img {
+}
+
+img {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -41,9 +53,14 @@ video{display: block;
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-#fff4ff" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#otrais" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ergonomiska darba vieta</a>
-    <a href="#bildes" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Bildes</a>
-
+    <a href="otrais.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Ergonomiska darba vieta</a>
+       <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
+    <a href="index.html#datorgrafika"  class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Datorgrafika</a>
+    <a href="index.html#Vektorgrafika"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Vektorgrafika</a>
+    <a href="index.html#GIF veidošana"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">GIF veiodošana</a>
+     <a href="index.html#VID"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">3D kubs, video montēšana</a>
+     <a href="index.html#word"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"> Tekstapstrāde </a>
+      <a href="index.html#Excel"class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white"> Excel </a>
   </div>
     <!-- Navbar on small screens -->
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
@@ -66,28 +83,69 @@ video{display: block;
             <li>Video montēšana</li>
             <li>Word</li>
             <li>Excel</li>
+             <div class="w3-#fff4ff" id="datorgrafika">
             <li>html(šobrīd)</li>
         </ul>
- 
-    
-    <h2 style="text-align:center; font size=5; padding-right: 50px">
-    Pāris bildes par darīto:
-</h2>
+
+       
+        <p style="text-align:center; font size=16px; padding-right: 50px; margin-top:70px;">
+            <b> Datorgrafika </b>
+        </p>
+        <p style="text-align:center; font size=16px; padding-right: 50px;"> Mēs izveidojām attēlu ar sava vārda burtiem, ar fotoattēliem saistītu darbu un izveidojām banneri, par sev doto tēmu. Visu darījām "Gimp" </p>
     <span style="padding-right: 50px"> </span>
-    <div class="w3-#fff4ff" id="bildes">     
-        <img src="images/banner.jpg" style='width: 400px; height: 300px;'> 
+ 
+        <div class="row" style="margin-bottom:50px ">
+            <div class="column"> <img src="images/banner.jpg" style='width: 400px; height: 300px;'> 
+                </div>
+             <div class="column">
+        <img src="images/bildes2.jpg"   style='width: 400px; height: 300px;'> 
+          </div>
+                <div class="w3-#fff4ff" id="Vektorgrafika">
+              <div class="column">
+        <img src="images/vardabilde.jpg"  style='width: 400px; height: 300px;'> 
+              </div> </div>
+              </div>  
+  
+     <p style="text-align:center; font size=16px; padding-right: 50px; margin-top:50px;">
+         <b> Vektorgrafika </b>
+        </p>
+        
+        <p style="text-align:center; font size=16px; padding-right: 50px;"> Izveidot A4 formāta darbu, izmantojot vektorgrafikas lietotni INKSCAPE un pēc tam izveidojām logo uzņēmumam. </p>
+        
+      <div class="w3-#fff4ff" id="GIF veidošana">  
          <img src="images/logovaris.svg" style='width: 400px; height: 300px;'>
-         
+
+      <p style="text-align:center; font size=16px; padding-right: 50px; margin-top:50px;">
+         <b> GIF veidošana </b> 
+        </p>
+         <p style="text-align:center; font size=16px; padding-right: 50px;"> Mēs izveidojām GIF animāciju par savu tēmu izmantojot "Powerpoint" </p>
+  <div class="row" style="margin-bottom:50px ">
+        <div class="w3-#fff4ff" id="VID"> 
           <img src="images/animacijaprezentacija.gif" style='width: 400px; height: 300px;'>
-         <video width="320" height="240" controls>
+  </div> 
+             <p style="text-align:center; font size=16px; padding-right: 50px; margin-top:50px;">
+         <b> Video montēšana un 3D kuba veidošana </b>
+        </p>
+         <p style="text-align:center; font size=16px; padding-right: 50px;"> Mēs izveidojām 3D kuba modeli, tajā ievietojot arī mūsu iepriekšveidoto logo, tad to izprintējām. Visu procesu dokumentējām un no tā materiāla izveidojām video montāžu. </p>
+         <div class="w3-#fff4ff" id="word">  <video width="320" height="240" controls>
              <source src="images/datorikasfilma_urr.mp4" type="video/mp4">
              Your browser does not support the <code>video</code> tag.
          </video>
-         <img src="images/2026-03-16 14_10_05 (1).jpg" style='width: 400px; height: 300px;'>
+  </div>
+             <p style="text-align:center; font size=16px; padding-right: 50px; margin-top:50px;">
+         <b> Tekstapstrāde(Word) </b> 
+        </p>
+         <p style="text-align:center; font size=16px; padding-right: 50px;"> Strādājot ar "Word", mēs apguvām tādas prasmes kā ielūgumu veidošana, attēlu apstrāde, teksta noformatēšana utt. </p>
+        <div class="w3-#fff4ff" id="Excel"> <img src="images/2026-03-16 14_10_05 (1).jpg" style='width: 400px; height: 300px;'>
+  </div>
+         <p style="text-align:center; font size=16px; padding-right: 50px; margin-top:50px;">
+         <b> Excel </b> 
+        </p>
+         <p style="text-align:center; font size=16px; padding-right: 50px;"> Strādājot ar "Excel", mēs pildījām uzdevumus ar tabulām, veicot dažādus aprēķinus ar funkcijām, veidojām tabulām grafikus un apguvām, kā grafikos attēlot specifiskus elementus. </p>
          <img src="images/2026-03-16 14_10_02.jpg" style='width: 400px; height: 300px;'>
              
-              
-    </div>
+  </div> 
+    
       <script>
 
 function myFunction() {
