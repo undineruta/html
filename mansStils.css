@@ -1,0 +1,45 @@
+/* style.css */
+
+/* Only change background and main font */
+body {
+    background-color: #fff4ff; /* light pink background */
+    font-family: "Times New Roman", Times, serif; /* main font for text */
+}
+
+/* Centered text utility (does not affect navbar) */
+.centered {
+    text-align: center;
+}
+
+/* Keep images centered and responsive */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Keep videos centered and responsive */
+video {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+/* Keep lists centered */
+ul {
+    text-align: center;
+    list-style-position: inside;
+}
+
+/* Paragraphs centered with some padding */
+p {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 50px;
+}
+
+/* Headings remain Times New Roman, bold */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Times New Roman", Times, serif;
+}
