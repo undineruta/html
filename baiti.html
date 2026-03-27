@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Baiti</title>
+</head>
+<body>
+    <form id="myForm">
+<p>
+    Aprēķināt cik daudz informācijas var lejupielādēt 
+    <input type="number" id="seconds" onfocus="resetForm()"> sekundēs, ja interneta ātrums ir 25 Mbps.
+</p>
+
+<p>Atbilde</p>
+
+<input type="text" id="result" readonly>
+<br><br>
+
+<label>
+    <input type="radio" name="unit" value="KB" onclick="calculate()"> KB
+</label>
+
+<label>
+    <input type="radio" name="unit" value="KiB" onclick="calculate()"> KiB
+</label>
+</form>
+<script>
+function calculate() {
+    let seconds = document.getElementById("seconds").value;
+
+    if (seconds === "") {
+        document.getElementById("result").value = "";
+        return;
+    }
+
+    let speed = 25 * 1000000; // 25 Mbps bitos
+    let bits = speed * seconds;
+    let bytes = bits / 8;
+
+    let selectedUnit = document.querySelector('input[name="unit"]:checked');
+
+    if (!selectedUnit) return;
+
+    let result;
+
+    if (selectedUnit.value === "KB") {
+        result = bytes / 1000;
+    } else {
+        result = bytes / 1024;
+    }
+
+    document.getElementById("result").value = result.toFixed(2);
+}
+function resetForm() {
+    document.getElementById("myForm").reset();
+}
+</script>
+
+</body>
+</html>
